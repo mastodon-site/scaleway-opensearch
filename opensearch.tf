@@ -12,6 +12,7 @@ resource "scaleway_opensearch_deployment" "deployment" {
   version     = var.opensearch_version
   node_amount = var.opensearch_node_amount
   node_type   = var.opensearch_node_type
+  user_name   = var.opensearch_user_name
   password    = random_password.cluster_password.result
 
   volume {
