@@ -48,3 +48,9 @@ variable "opensearch_volume_size_in_gb" {
   type        = number
   default     = 10
 }
+
+variable "opensearch_user_name" {
+  description = "Username to set for the primary cluster user"
+  type        = string
+  default     = "opensearch-user"
+}
